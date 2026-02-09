@@ -1,5 +1,0 @@
-mkdir -p src/somedir
-touch src/somedir/.gitkeep
-git add src/somedir/.gitkeep
-git commit -m "Add .gitkeep to src/somedir to keep directory"
-git push
