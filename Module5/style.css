@@ -1,63 +1,130 @@
-/* ID selector requirement */
-#gameTitle{
-color: purple;
-text-align: center;
+/* Page background styling */
+body{
+background: linear-gradient(to bottom, #6ec6ff, #1e3c72);
+font-family: Arial, sans-serif;
+margin:0;
+color:white;
 }
 
 
-/* Class selector requirement */
-.game-info{
-background-color: lightgray;
-padding: 15px;
-margin: 10px;
+/* Header banner styling */
+header{
+text-align:center;
+padding:40px 20px;
+background-image:url("https://cdn2.unrealengine.com/fortnite-chapter4-season1-battlepass-1920x1080-1197f6d3c1d4.jpg");
+background-size:cover;
+background-position:center;
+}
+
+
+/* ID selector requirement */
+#gameTitle{
+font-size:60px;
+letter-spacing:4px;
+color:#ffcc00;
+text-shadow:3px 3px 8px black;
+}
+
+
+/* Navigation button styling */
+header nav{
+margin-top:15px;
 }
 
 
 /* Descendant selector requirement */
 header nav a{
-text-decoration: none;
-padding: 10px;
-font-weight: bold;
-}
-
-
-/* Descendant selector requirement */
-main section p{
-font-size: 16px;
-line-height: 1.5;
-}
-
-
-/* Combinator selector requirement */
-section > h2{
-color: darkblue;
+background-color:#ffcc00;
+color:black;
+padding:10px 20px;
+border-radius:8px;
+margin:5px;
+display:inline-block;
+text-decoration:none;
+font-weight:bold;
+transition:0.3s;
 }
 
 
 /* Pseudo-class requirement */
 nav a:hover{
-color: red;
+background-color:#ff8800;
+transform:scale(1.1);
 }
 
 
-/* Attribute selector requirement for off-site links */
-a[href^="https"]{
-color: green;
+/* Main content spacing */
+main{
+padding:20px;
+}
+
+
+/* Class selector requirement */
+.game-info{
+background-color:rgba(0,0,0,0.6);
+padding:20px;
+margin:20px;
+border-radius:12px;
+box-shadow:0px 0px 12px black;
+}
+
+
+/* Descendant selector requirement */
+main section p{
+font-size:17px;
+line-height:1.6;
+}
+
+
+/* Combinator selector requirement */
+section > h2{
+color:#00e5ff;
+border-bottom:2px solid #00e5ff;
+padding-bottom:5px;
+}
+
+
+/* List styling */
+ul{
+list-style:none;
+padding:0;
+margin-top:10px;
 }
 
 
 /* Alternating list styles requirement */
 li:nth-child(odd){
-background-color: lightblue;
+background-color:rgba(255,255,255,0.15);
+padding:12px;
+margin:6px;
+border-radius:6px;
 }
 
 li:nth-child(even){
-background-color: lightyellow;
+background-color:rgba(0,0,0,0.35);
+padding:12px;
+margin:6px;
+border-radius:6px;
+}
+
+
+/* Attribute selector requirement for off-site links */
+a[href^="https"]{
+color:#00ffcc;
+}
+
+
+/* Footer styling */
+footer{
+text-align:center;
+padding:15px;
+background-color:rgba(0,0,0,0.75);
+margin-top:30px;
 }
 
 
 /* !important rule requirement */
-/* !important is used to override other link color rules */
+/* !important is used here to ensure navigation links stay black even when other link styles apply */
 nav a{
-color: black !important;
+color:black !important;
 }
