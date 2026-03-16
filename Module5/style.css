@@ -1,0 +1,63 @@
+/* ID selector requirement */
+#gameTitle{
+color: purple;
+text-align: center;
+}
+
+
+/* Class selector requirement */
+.game-info{
+background-color: lightgray;
+padding: 15px;
+margin: 10px;
+}
+
+
+/* Descendant selector requirement */
+header nav a{
+text-decoration: none;
+padding: 10px;
+font-weight: bold;
+}
+
+
+/* Descendant selector requirement */
+main section p{
+font-size: 16px;
+line-height: 1.5;
+}
+
+
+/* Combinator selector requirement */
+section > h2{
+color: darkblue;
+}
+
+
+/* Pseudo-class requirement */
+nav a:hover{
+color: red;
+}
+
+
+/* Attribute selector requirement for off-site links */
+a[href^="https"]{
+color: green;
+}
+
+
+/* Alternating list styles requirement */
+li:nth-child(odd){
+background-color: lightblue;
+}
+
+li:nth-child(even){
+background-color: lightyellow;
+}
+
+
+/* !important rule requirement */
+/* !important is used to override other link color rules */
+nav a{
+color: black !important;
+}
